@@ -2,7 +2,6 @@ import React from "react";
 import { Image, Nav } from "react-bootstrap";
 import logo from "./logo.png";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,12 +13,9 @@ function Home() {
           <Nav.Link as={HashLink} smooth to="#services">
             services
           </Nav.Link>
-          <a
-            id="external"
-            href="https://squareup.com/appointments/book/0itng16mdbdjvc/LE9QWM3TGQV9Q/start"
-          >
-            <Nav.Link>book</Nav.Link>
-          </a>
+          <Nav.Link href="https://squareup.com/appointments/book/0itng16mdbdjvc/LE9QWM3TGQV9Q/start">
+            book
+          </Nav.Link>
           <Nav.Link as={HashLink} smooth to="#gallery">
             gallery
           </Nav.Link>
